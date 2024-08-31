@@ -1,0 +1,7 @@
+file3 line one
+file3 line two
+file3 line three
+file3 line four
+file3 line five
+file3 line six
+file3 line seven
