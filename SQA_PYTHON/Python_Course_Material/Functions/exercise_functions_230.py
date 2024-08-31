@@ -5,12 +5,20 @@
 # There are at least two ways you can do it
 
 def calculate_area_of_circle_v1(radius):
-    pass
+    PI = 3.142
+    Area =  PI  * (radius**2)
+    return Area
+area = calculate_area_of_circle_v1(10)
+print(area)
 
 
 def calculate_area_of_circle_v2(radius):
-    pass
-
+    radius_square = (radius**2)
+    PI = 3.142
+    Area = radius_square * PI
+    return Area
+area = calculate_area_of_circle_v2(10)
+print(area)
 # # Test data
 # radius = 4
 # area = ??
@@ -27,15 +35,31 @@ def calculate_area_of_circle_v2(radius):
 # Exercise 2
 # Define a function that takes in social security number as parameter (formated XXX-XX-XXXX) and return the last for digits
 # Example if input is 1234-56-7890, the the function will return 7890
-def get_last_4_digit_of_ssn_v1(ssn):
-    pass
+# def get_last_4_digit_of_ssn_v1():
+#     ssn = input("Please enter your ssn here: ")
+#     formated_ssn = (ssn[-1:-4])
+#     print(formated_ssn)
+#     return formated_ssn
+
+# ssn_secret = get_last_4_digit_of_ssn_v1()
+# print(ssn_secret)
+
 
 
 # Exercise 2 - Continuation
 # Define a function that takes in social security number as parameter (formated XXX-XX-XXXX) and return the last for digits
 # Validate the input data matches the format expected. If not raise an exception.
-def get_last_4_digit_of_ssn_v1(ssn):
-    pass
+def get_last_4_digit_of_ssn_v1():
+    ssn = input("Please enter your ssn here: ")
+    strip_ssn = ssn.split("-")
+    if len(strip_ssn[0]) != 3 or len(strip_ssn[1]) != 2 or len(strip_ssn[2]) != 4:
+        print("invalid number")
+        print("please enter a number with this format: XXX-XX-XXXX")
+    else:
+            formated_ssn = strip_ssn[2]
+            return formated_ssn
+secret_ssn = get_last_4_digit_of_ssn_v1()
+print(secret_ssn)
 
 ##########################################################################
 # Exercise 3
@@ -91,5 +115,8 @@ print(my_list)
 
 my_list = get_first_names_v1(example_input)
 print(my_list)
+
+#.................................................................................
+#.................................................................................
 
 
