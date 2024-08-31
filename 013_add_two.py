@@ -17,7 +17,12 @@ from lib.helpers import check_that_these_are_equal
 
 # YOUR FUNCTION GOES BELOW THIS LINE
 
+def add_two(num):
+   return num + 2
 
+add_two(5)
+
+print (add_two(5))
 
 # YOUR FUNCTION GOES ABOVE THIS LINE
 

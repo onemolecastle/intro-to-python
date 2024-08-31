@@ -11,7 +11,12 @@ from lib.helpers import check_that_these_are_equal
 # * Returns the result
 
 # YOUR FUNCTION GOES BELOW THIS LINE
+def add_numbers(a, b):
+    return a + b
 
+add_numbers(3, 7)
+
+print (add_numbers(3, 7))
 
 
 # YOUR FUNCTION GOES ABOVE THIS LINE
